@@ -4,6 +4,9 @@
 Escreva uma função em C que, dada um número real como parâmetro,
 retorne a parte inteira e a parte fracionária desse número. Escreva também um
 programa que chame essa função.
+
+Protótipo da função:
+void frac(float num, int* inteiro, float* frac);
 */
 
 void frac(float num, int *inteiro, float *frac) {
