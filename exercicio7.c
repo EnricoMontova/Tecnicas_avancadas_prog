@@ -2,6 +2,12 @@
 #include <stdbool.h> 
 #include <locale.h>
 
+/*
+Elabore uma função em C que receba duas strings como parâmetros e
+verifique se a segunda string ocorre dentro da primeira. Utilize aritmética de
+ponteiros para acessar os caracteres das strings.
+*/
+
 bool ocorrenciaString(const char *str1, const char *str2) {
     
     const char *p1 = str1;
@@ -52,7 +58,7 @@ int main() {
     if (ocorrenciaString(str1, str2)) {
         printf("A segunda string ocorre dentro da primeira.\n");
     } else {
-        printf("A segunda string N�O ocorre dentro da primeira.\n");
+        printf("A segunda string NÃO ocorre dentro da primeira.\n");
     }
 
     return 0;
