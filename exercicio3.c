@@ -1,16 +1,26 @@
 #include <stdio.h>
 
+void frac(float num, int *inteiro, float *frac) {
+    
+    *inteiro = (int)num;
+
+    
+    *frac = num - *inteiro;
+}
+
 
 int main(){
 	
-	float num;
+	float n;
 	
 	printf("Digite um numero float: ");
-	scanf("%f", &num);
+	scanf("%f", &n);
 	
-	int part_int = (int) num;
-	float part_dec = num - part_int;
+	int part_int;
+	float part_frac;
+	
+	frac(n, &part_int, &part_frac);
 	
 	printf("Parte inteira: %d\n", part_int);
-	printf("Parte decimal: %.2f\n", part_dec);
+	printf("Parte decimal: %.2f\n", part_frac);
 }
