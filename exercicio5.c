@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <limits.h> 
 
+/*
+Escreva uma função em C que receba um array de inteiros V, bem como os
+endereços de duas variáveis inteiras, min e max, e armazene nessas variáveis
+o valor mínimo e máximo encontrados no array. Além disso, escreva uma função
+main que utilize essa função.
+*/
+
 void findMinMax(int V[], int size, int *min, int *max);
 
 int main() {
@@ -11,7 +18,7 @@ int main() {
 
     
     if (tamanho <= 0) {
-        printf("Tamanho inv�lido.\n");
+        printf("Tamanho inválido.\n");
         return 1; 
     }
 
