@@ -1,9 +1,18 @@
 #include <stdio.h>
 #include <locale.h>
 
+/*
+Escreva uma função em C que aceita como parâmetro um array de inteiros
+com N valores e determina o maior elemento do array, bem como o número de
+vezes que esse elemento ocorreu no array. Por exemplo, para um array com os
+seguintes elementos: 5, 2, 15, 3, 7, 15, 8, 6, 15, a função deve retornar para o
+programa que a chamou o valor 15 e o número 3 (indicando que o número 15
+ocorreu 3 vezes). A função deve ser do tipo void.
+*/
+
 void find_element(int vetor[], int valores, int *maior, int *contagem) {
     if(valores <= 0) {
-        printf("Array vazio ou inv�lido.\n");
+        printf("Array vazio ou inválido.\n");
         return; 
     }
 
@@ -25,12 +34,12 @@ int main() {
     setlocale(LC_ALL, "Portuguese");
 	int n;
 
-    printf("Digite o n�mero de valores no vetor: ");
+    printf("Digite o número de valores no vetor: ");
     scanf("%d", &n);
 
     
     if(n <= 0) {
-        printf("Tamanho inv�lido.\n");
+        printf("Tamanho inválido.\n");
         return 1; 
     }
 
