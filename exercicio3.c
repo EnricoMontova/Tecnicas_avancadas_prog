@@ -3,8 +3,6 @@
 void frac(float num, int *inteiro, float *frac) {
     
     *inteiro = (int)num;
-
-    
     *frac = num - *inteiro;
 }
 
