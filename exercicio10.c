@@ -3,6 +3,13 @@
 #include <string.h>
 #include <locale.h>
 
+/*
+Defina uma estrutura de dados em C (usando struct) que represente um
+aluno com as seguintes informações: nome, email, telefone e data de
+nascimento. Quais serão os tipos de dados mais adequados para essa
+estrutura? Como vocês alocariam memória para ela?
+*/
+
 typedef struct aluno {
     char nome[100];           
     char email[100];          
@@ -16,7 +23,7 @@ int main() {
     Aluno *aluno1 = (Aluno*)malloc(sizeof(Aluno));
 
     if (aluno1 == NULL) {
-        printf("Erro ao alocar mem�ria para o aluno.\n");
+        printf("Erro ao alocar memória para o aluno.\n");
         return 1; 
     }
 
@@ -27,7 +34,7 @@ int main() {
     printf("Digite o email do %s: ", aluno1->nome);
     scanf("%99s", aluno1->email);
 
-    printf("Digite o n�mero de telefone do %s: ", aluno1->nome);
+    printf("Digite o número de telefone do %s: ", aluno1->nome);
     scanf("%19s", aluno1->telefone); 
 
     printf("Digite a data de nascimento do %s (formato dd/mm/aaaa): ", aluno1->nome);
