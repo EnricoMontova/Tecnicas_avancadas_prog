@@ -1,22 +1,28 @@
 #include <stdio.h>
 #include <locale.h>
 
+/*
+Escreva um programa em C que declare duas variÃ¡veis inteiras. Compare os
+endereÃ§os de memÃ³ria dessas variÃ¡veis e exiba o endereÃ§o de memÃ³ria da
+variÃ¡vel com o maior endereÃ§o.
+*/
+
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int n1, n2;
 	
-	printf("Digite um número para variável n1: ");
+	printf("Digite um nÃºmero para variÃ¡vel n1: ");
 	scanf("%d", &n1);
 	
-	printf("Digite um número para variável n2: ");
+	printf("Digite um nÃºmero para variÃ¡vel n2: ");
 	scanf("%d", &n2);
 	
-	printf("O endereço de n1 é %d.\n", &n1);
-	printf("O endereço de n2 é %d.\n", &n2);
+	printf("O endereÃ§o de n1 Ã© %d.\n", &n1);
+	printf("O endereÃ§o de n2 Ã© %d.\n", &n2);
 	
 	if(&n1 > &n2){
-		printf("o endereço de memória de n1 é maior que o de n2");
+		printf("o endereÃ§o de memÃ³ria de n1 Ã© maior que o de n2");
 		return;
 	} 	
-	printf("o endereço de memória de n2 é maior que o de n1");
+	printf("o endereÃ§o de memÃ³ria de n2 Ã© maior que o de n1");
 }
